@@ -18,9 +18,6 @@
  
 <!-- ═══ HERO 3D ══════════════════════════════════════════════════ -->
 <div id="canvas-container">
-    <div class="absolute top-8 left-8 z-[100] pointer-events-none">
-        <img src="LOGO.png" alt="Logo" class="w-32 md:w-48 h-auto object-contain pointer-events-auto">
-    </div>
      <div class="absolute top-8 right-8 z-[100] pointer-events-none">
         <img src="LABA.png" alt="Logo" class="w-32 md:w-32 h-auto object-contain pointer-events-auto">
     </div>
@@ -44,8 +41,8 @@
                         22 APRILE
                     </span>
                     
-                    <p class="text-xs   leading-relaxed mb-8 opacity-80">Esplorazione tra AI e design. Un'analisi dei processi creativi nell'era generativa.</p>
-                    <a href="#" class="mt-auto border-2 border-[var(--black)] py-3 text-center font-black uppercase text-xs hover:bg-[var(--black)] hover:text-white transition-all text-[var(--black)]">PROGRAMMA</a>
+                    <p class="text-xs leading-relaxed mb-8">Esplorazione tra AI e design. Un'analisi dei processi creativi nell'era generativa.</p>
+                    <a href="#DISORGANICHE" class="mt-auto border-2 border-[var(--black)] py-3 text-center font-black uppercase text-xs hover:bg-[var(--black)] hover:text-white transition-all text-[var(--black)]">PROGRAMMA</a>
                 </div>
             </div>
         </div>
@@ -59,23 +56,23 @@
                         21 MAGGIO
                     </span>
                     
-                    <p class="text-xs   mb-8 opacity-80">Mostra collettiva dei progetti selezionati. Workshop interattivi e installazioni totem.</p>
-                    <a href="#" class="mt-auto border-2 border-[var(--black)] py-3 text-center font-black uppercase text-xs hover:bg-[var(--black)] hover:text-white transition-all text-[var(--black)]">Info Evento</a>
+                    <p class="text-xs mb-8">Mostra collettiva dei progetti selezionati. Workshop interattivi e installazioni totem.</p>
+                    <a href="#EXPO" class="mt-auto border-2 border-[var(--black)] py-3 text-center font-black uppercase text-xs hover:bg-[var(--black)] hover:text-white transition-all text-[var(--black)]">Info Evento</a>
                 </div>
             </div>
         </div>
 
         <div class="trigger-area">
             <div class="floating-plane">
-                <div class="plane-content bg-[var(--orange)] p-8  flex flex-col">
+                <div class="plane-content bg-[var(--orange)] p-8 flex flex-col">
                    
-                    <h3 class="text-3xl font-bold uppercase mb-4">PRŌSPON</h3>
-                    <h1 class="text-xl font_regular uppercase mb-4">Fashion Show</h1><br><br>
+                    <h3 class="text-3xl font-bold uppercase">PRŌSOPON</h3>
+                    <h1 class="text-xl uppercase mb-4">Fashion Show</h1><br><br>
                     <span class="absolute -right-6 top-28 py-2 px-8 font-black bg-[var(--black)] text-[var(--white)]">
                         23 GIUGNO
                     </span>
-                    <p class="text-xs  mb-8 opacity-80">Sfilata conclusiva degli studenti di Fashion Design. Il culmine della ricerca annuale.</p>
-                    <a href="#" class="mt-auto border-2 border-[var(--black)] py-3 text-center font-black uppercase text-xs hover:bg-[var(--black)] hover:text-white transition-all text-[var(--black)]">Info Evento</a>
+                    <p class="text-xs  mb-8">Sfilata conclusiva degli studenti di Fashion Design. Il culmine della ricerca annuale.</p>
+                    <a href="#SFILATA" class="mt-auto border-2 border-[var(--black)] py-3 text-center font-black uppercase text-xs hover:bg-[var(--black)] hover:text-white transition-all text-[var(--black)]">Info Evento</a>
                 </div>
             </div>
         </div>
@@ -89,59 +86,50 @@
         <h2 class="font-black text-5xl uppercase mb-16 tracking-tighter">Eventi</h2>
  
         <!-- Item 01 -->
-        <div class="prog-item group">
-            <button onclick="toggleProg(this)" class="w-full py-10 flex justify-between items-center text-left group-hover:text-[#3F5099] transition-colors">
-                <div class="flex items-baseline gap-6">
-                    <h3 class="text-3xl font-black uppercase tracking-tighter">22 Aprile — Cronache Disorganiche</h3>
+        <div>
+            <div class="flex items-baseline gap-6" id="DISORGANICHE">
+                <h3 class="text-3xl font-black uppercase tracking-tighter">22 Aprile — Cronache Disorganiche</h3>
+            </div>
+    
+            <div class="py-10 grid grid-cols-1 md:grid-cols-2 gap-8 text-sm uppercase font-bold tracking-widest">
+                <div class="space-y-4 pl-6" style="border-left:2px solid var(--blue);">
+                    <p><span class="opacity-40">14:00</span> — Apertura Showcase</p>
+                    <p><span class="opacity-40">16:00</span> — Workshop AI Design</p>
                 </div>
-                <span class="plus-icon text-4xl  ">+</span>
-            </button>
-            <div class="prog-content">
-                <div class="pb-10 grid grid-cols-1 md:grid-cols-2 gap-8 text-sm uppercase font-bold tracking-widest">
-                    <div class="space-y-4 pl-6" style="border-left:2px solid var(--blue);">
-                        <p><span class="opacity-40">14:00</span> — Apertura Showcase</p>
-                        <p><span class="opacity-40">16:00</span> — Workshop AI Design</p>
-                    </div>
-                    <div class="space-y-4 pl-6" style="border-left:2px solid var(--blue);">
-                        <p><span class="opacity-40">18:30</span> — Talk con Alberto Puliafito</p>
-                        <p><span class="opacity-40">20:30</span> — Live Concert Andy (Bluvertigo)</p>
-                    </div>
+                <div class="space-y-4 pl-6" style="border-left:2px solid var(--blue);">
+                    <p><span class="opacity-40">18:30</span> — Talk con Alberto Puliafito</p>
+                    <p><span class="opacity-40">20:30</span> — Live Concert Andy (Bluvertigo)</p>
                 </div>
             </div>
         </div>
  
         <!-- Item 02 -->
-        <div class="prog-item group">
-            <button onclick="toggleProg(this)" class="w-full py-10 flex justify-between items-center text-left group-hover:text-[#F26522] transition-colors">
-                <div class="flex items-baseline gap-6">
-                    <h3 class="text-3xl font-black uppercase tracking-tighter">21 Maggio — Expo Creatività</h3>
+        <div>
+            <div class="flex items-baseline gap-6" id="EXPO">
+                <h3 class="text-3xl font-black uppercase tracking-tighter">21 Maggio — Expo Creatività</h3>
+            </div>
+            
+            <div class="py-10 grid grid-cols-1 md:grid-cols-2 gap-8 text-sm uppercase font-bold tracking-widest">
+                <div class="space-y-4 pl-6" style="border-left:2px solid var(--orange);">
+                    <p><span class="opacity-40">10:00</span> — Inaugurazione Synapses</p>
+                    <p><span class="opacity-40">12:00</span> — Talk</p>
                 </div>
-                <span class="plus-icon text-4xl  ">+</span>
-            </button>
-            <div class="prog-content">
-                <div class="pb-10 grid grid-cols-1 md:grid-cols-2 gap-8 text-sm uppercase font-bold tracking-widest">
-                    <div class="space-y-4 pl-6" style="border-left:2px solid var(--orange);">
-                        <p><span class="opacity-40">10:00</span> — Inaugurazione Synapses</p>
-                        <p><span class="opacity-40">12:00</span> — Talk</p>
-                    </div>
-                    <div class="space-y-4 pl-6" style="border-left:2px solid var(--orange);">
-                        <p><span class="opacity-40">19:00</span> — DJ Set</p>
-                        <p><span class="opacity-40">21:00</span> — Chiusura </p>
-                    </div>
+                <div class="space-y-4 pl-6" style="border-left:2px solid var(--orange);">
+                    <p><span class="opacity-40">19:00</span> — DJ Set</p>
+                    <p><span class="opacity-40">21:00</span> — Chiusura </p>
                 </div>
             </div>
+           
         </div>
  
         <!-- Item 03 -->
-        <div class="prog-item group">
-            <button onclick="toggleProg(this)" class="w-full py-10 flex justify-between items-center text-left group-hover:text-[#F5C400] transition-colors">
-                <div class="flex items-baseline gap-6">
+       
+           <div>
+                <div class="flex items-baseline gap-6" id="SFILATA">
                     <h3 class="text-3xl font-black uppercase tracking-tighter">23 Giugno — Fashion Show</h3>
                 </div>
-                <span class="plus-icon text-4xl  ">+</span>
-            </button>
-            <div class="prog-content">
-                <div class="pb-10 grid grid-cols-1 md:grid-cols-2 gap-8 text-sm uppercase font-bold tracking-widest">
+               
+                <div class="py-10 grid grid-cols-1 md:grid-cols-2 gap-8 text-sm uppercase font-bold tracking-widest">
                     <div class="space-y-4 pl-6" style="border-left:2px solid var(--yellow);">
                         <p><span class="opacity-40">21:00</span> — Fashion Show</p>
                     </div>
@@ -149,12 +137,22 @@
                         <p><span class="opacity-40">23:00</span> — After Party</p>
                     </div>
                 </div>
+                <div class="map-container" id="map-scope">
+                    <div id="info-box">
+                        <h4 class="text-sm md:text-xl font-black uppercase">Room Name</h4>
+                        <p class="text-xs font-mono">Descrizione dell'evento e dettagli tecnici.</p>
+                    </div>
+
+                    <div class="map-wrapper" id="map-3d">
+                        <img src="PIANTINA3.png" class="map-img" id="current-map-img">
+                        <div id="hotspot-layer"></div>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
+
 </section>
 
-<section class="py-20 bg-[var(--white)]">
+<section class=" bg-[var(--white)]">
     <div class="max-w-6xl mx-auto px-8">
         <h2 class="font-black text-5xl uppercase mb-16 tracking-tighter">WAYFINDING</h2>
         <div class="flex gap-4 mb-10 border-b border-black pb-4">
@@ -198,7 +196,7 @@
         black:    '#111111', 
     };
  
-    /*var blocksConfig = [
+    var blocksConfig = [
        
         { 
             color: C.cyan, 
@@ -266,7 +264,7 @@
             rot: [0, 45, 0], 
             content: `
             <div style="width:100%; height:100%; display:flex; align-items:center; justify-content:flex-end;">
-                <h1 style="font-size:140px; font-family:"DIN-BOLD"; line-height:1; margin:0; color:var(--black);">SYN</h1>
+               <img src="./SYN.png" alt="Logo" style=" height:auto;">
             </div>`
         },
 
@@ -277,33 +275,39 @@
             rot: [0, -45, 0], 
             content: `
             <div style=" padding:0px; width:100%; height:100%; display:flex; align-items:center; justify-content:flex-start;">
-                <h1 style="font-size:140px; font-family:"DIN-BOLD"; line-height:1; margin:0; color:var(--black);">APSES</h1>
+                 <img src="./APSES.png" alt="Logo" style=" height:auto;">
             </div>`
         },
 
       
         { 
-            color: C.purple, 
+            color: C.cyan, 
             pos: [-350, 0, 300],   
-            size: [600, 350],  
+            size: [600, 550],  
             rot: [0, 45, 0],  
             url: 'https://synapses.laba.edu/cronache-disorganiche/',
             content: `
-            <div style="display:flex; flex-direction:column; text-align:left;">
-              <h1 style="font-size:60px;">CRONACHE<br>DISORGANICHE</h1>
-              <p style="font-size:30px;font-weight:500; ">INCROCI CREATIVI</p>
-              <br><br><br><br>
-              <p style="font-size:30px; font-weight:900;">ACCADEMIA LABA E MITA</p>
-            </div>`
+           <div style="display:flex; flex-direction:column; justify-content:center; text-align:left;">
+               <h1 style="font-size:60px; font-weight:900;">PRŌSOPON</h1>
+                <p style="font-size:30px; font-weight:900;">FASHION SHOW</p>
+               
+                 <br><br><br><br>
+                <p style="font-size:30px; font-weight:900;">BRIXIA FORUM</p>
+                <p style="font-size:30px; font-weight:500;">VIA CAPRERA 5,<br>BRESCIA</p><br><br>
+                <p style="font-size:30px; font-weight:900;">H. 20:00</p>
+                <p style="font-size:30px; font-weight:500;">INGRESSO</p>
+                <p style="font-size:30px; font-weight:500;">SU PRENOTAZIONE</p>
+            </div>
+            `
         },
         { 
             color: C.black,   
-            pos: [-525, -50, 500],   
+            pos: [-525, 100, 500],   
             size: [300, 30], 
             rot: [0, 45, 0], 
             content: `
             <div style="width:100%; height:100%; display:flex; align-items:center;">
-                <h1 style="font-size:35px; color:var(--white);">22 APRILE</h1>
+                <h1 style="font-size:35px; color:var(--white);">23 GIUGNO</h1>
             </div>`
         },
     
@@ -322,6 +326,8 @@
               <p style="font-size:30px; font-weight:900;">H. 14:00 - 18:00</p>
             </div>`
         },
+
+        
         { 
             color: C.black,   
             pos: [175, 100, 350],    
@@ -335,38 +341,35 @@
        
           
         { 
-            color: C.cyan,   
-            pos: [0, -300, 600], 
-            size: [500, 580],  
+            color: C.purple,   
+            pos: [0, -300, 500], 
+            size: [550, 400],  
             rot: [-90,0, -45], 
-            url: 'https://synapses.laba.edu/fashion-show/',
+            url: '#DISORGANICHE',
             content: `
-            <div style="display:flex; flex-direction:column; justify-content:center; text-align:left;">
-               <h1 style="font-size:60px; font-weight:900;">PRŌSPON</h1>
-                <p style="font-size:30px; font-weight:900;">FASHION SHOW</p>
-               
-                 <br><br><br><br>
-                <p style="font-size:30px; font-weight:900;">BRIXIA FORUM</p>
-                <p style="font-size:30px; font-weight:500;">VIA CAPRERA 5,<br>BRESCIA</p><br><br>
-                <p style="font-size:30px; font-weight:900;">H. 20:00</p>
-                <p style="font-size:30px; font-weight:500;">INGRESSO</p>
-                <p style="font-size:30px; font-weight:500;">SU PRENOTAZIONE</p>
-            </div>`
+            
+            <div style="display:flex; flex-direction:column; text-align:left;">
+              <h1 style="font-size:60px;">CRONACHE<br>DISORGANICHE</h1>
+              <p style="font-size:30px;font-weight:500; ">INCROCI CREATIVI</p>
+              <br><br><br><br>
+              <p style="font-size:30px; font-weight:900;">ACCADEMIA LABA E MITA</p>
+            </div>
+            `
         },
 
          { 
             color: C.black,   
-            pos: [200, -285, 625],   
+            pos: [100, -285, 650],   
             size: [250, 50], 
             rot: [-90,0, -45],
             content: `
             <div style="width:100%; height:100%; padding:0px; display:flex; align-items:center;">
-                <h1 style="font-size:30px; color:var(--white);">23 GIUGNO</h1>
+                <h1 style="font-size:30px; color:var(--white);"> 22 MAGGIO</h1>
             </div>`
         },
-    ];*/
+    ];
     
-    var blocksConfig = [
+    /*var blocksConfig = [
        
         
          { 
@@ -535,7 +538,7 @@
             url: 'https://synapses.laba.edu/fashion-show/',
             content: `
             <div style="display:flex; flex-direction:column; justify-content:center; text-align:left;">
-               <h1 style="font-size:60px; font-weight:900;">PRŌSPON</h1>
+               <h1 style="font-size:60px; font-weight:900;">PRŌSOPON</h1>
                 <p style="font-size:30px; font-weight:900;">FASHION SHOW</p>
                
                  <br><br><br><br>
@@ -557,7 +560,7 @@
                 <h1 style="font-size:30px; color:var(--white);">23 GIUGNO</h1>
             </div>`
         },
-    ];
+    ];*/
     var scene, camera, renderer, pivot, group;
     var isFocused = false, isMouseDown = false, px, py;
     var isMobile = window.innerWidth < 768;
