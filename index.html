@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Synapses 2026 | LABA Brescia</title>
- 
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/renderers/CSS3DRenderer.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
@@ -12,35 +12,30 @@
     <link rel="stylesheet" href="./CSS/style.css">
 </head>
 <body>
- 
+
 <!-- ═══ REDIRECT OVERLAY ════════════════════════════════════════ -->
 <div id="redirect-overlay"></div>
- 
+
 <!-- ═══ HERO 3D ══════════════════════════════════════════════════ -->
 <div id="canvas-container">
-     <div class="absolute top-8 right-8 z-[100] pointer-events-none">
-        <img src="LABA.png" alt="Logo" class="w-32 md:w-32 h-auto object-contain pointer-events-auto">
+    <div class="absolute top-8 right-8 z-[100] pointer-events-none">
+        <img src="LABA.png" alt="Logo" class="w-32 h-auto object-contain pointer-events-auto">
     </div>
-</div>
     <div class="absolute bottom-8 w-full text-center z-50 uppercase text-[9px] tracking-[4px] opacity-80 pointer-events-none">
-        Trascina per esplorare • Tocca i volumi<br>Scrolla verso il basso<br><br>↓
+        Trascina per esplorare &bull; Tocca i volumi<br>Scrolla verso il basso<br><br>&darr;
     </div>
 </div>
- 
- 
-<!-- ═══ FESTIVAL ════════════════════════════════════ -->
-<section class="max-w-6xl px-8 md:px-0 w-full max-w-6xl mx-auto pt-32 perspective-scene">
+
+<!-- ═══ FESTIVAL ════════════════════════════════════════════════ -->
+<section class="max-w-6xl px-8 md:px-0 w-full mx-auto pt-32 perspective-scene">
     <h2 class="font-black text-5xl uppercase mb-16 tracking-tighter">Il Festival</h2>
     <div class="planes-container-3d">
+
         <div class="trigger-area">
             <div class="floating-plane">
                 <div class="plane-content bg-[var(--purple)] p-8 flex flex-col relative overflow-visible">
-                    
                     <h3 class="text-3xl font-black uppercase mb-4">Cronache Disorganiche</h3><br><br>
-                    <span class="absolute -right-6 top-28 py-2 px-8 font-black bg-[var(--black)] text-[var(--white)]">
-                        22 APRILE
-                    </span>
-                    
+                    <span class="absolute -right-6 top-28 py-2 px-8 font-black bg-[var(--black)] text-[var(--white)]">22 APRILE</span>
                     <p class="text-xs leading-relaxed mb-8">Esplorazione tra AI e design. Un'analisi dei processi creativi nell'era generativa.</p>
                     <a href="#DISORGANICHE" class="mt-auto border-2 border-[var(--black)] py-3 text-center font-black uppercase text-xs hover:bg-[var(--black)] hover:text-white transition-all text-[var(--black)]">PROGRAMMA</a>
                 </div>
@@ -49,15 +44,11 @@
 
         <div class="trigger-area">
             <div class="floating-plane">
-                <div class="plane-content bg-[var(--yellow)] p-8  flex flex-col">
-                   
-                    <h3 class="text-3xl font-black uppercase mb-4">Expo della Creatività</h3><br><br>
-                     <span class="absolute -right-6 top-28 py-2 px-8 font-black bg-[var(--black)] text-[var(--white)]">
-                        21 MAGGIO
-                    </span>
-                    
+                <div class="plane-content bg-[var(--yellow)] p-8 flex flex-col">
+                    <h3 class="text-3xl font-black uppercase mb-4">Expo della Creativit&agrave;</h3><br><br>
+                    <span class="absolute -right-6 top-28 py-2 px-8 font-black bg-[var(--black)] text-[var(--white)]">21 MAGGIO</span>
                     <p class="text-xs mb-8">Mostra collettiva dei progetti selezionati. Workshop interattivi e installazioni totem.</p>
-                    <a href="#EXPO" class="mt-auto border-2 border-[var(--black)] py-3 text-center font-black uppercase text-xs hover:bg-[var(--black)] hover:text-white transition-all text-[var(--black)]">Info Evento</a>
+                    <a href="#EXPO" class="mt-auto border-2 border-[var(--black)] py-3 text-center font-black uppercase text-xs hover:bg-[var(--black)] hover:text-white transition-all text-[var(--black)]">PROGRAMMA</a>
                 </div>
             </div>
         </div>
@@ -65,14 +56,11 @@
         <div class="trigger-area">
             <div class="floating-plane">
                 <div class="plane-content bg-[var(--orange)] p-8 flex flex-col">
-                   
-                    <h3 class="text-3xl font-bold uppercase">PRŌSOPON</h3>
+                    <h3 class="text-3xl font-bold uppercase">PR&#274;SOPON</h3>
                     <h1 class="text-xl uppercase mb-4">Fashion Show</h1><br><br>
-                    <span class="absolute -right-6 top-28 py-2 px-8 font-black bg-[var(--black)] text-[var(--white)]">
-                        23 GIUGNO
-                    </span>
-                    <p class="text-xs  mb-8">Sfilata conclusiva degli studenti di Fashion Design. Il culmine della ricerca annuale.</p>
-                    <a href="#SFILATA" class="mt-auto border-2 border-[var(--black)] py-3 text-center font-black uppercase text-xs hover:bg-[var(--black)] hover:text-white transition-all text-[var(--black)]">Info Evento</a>
+                    <span class="absolute -right-6 top-28 py-2 px-8 font-black bg-[var(--black)] text-[var(--white)]">23 GIUGNO</span>
+                    <p class="text-xs mb-8">Sfilata conclusiva degli studenti di Fashion Design. Il culmine della ricerca annuale.</p>
+                    <a href="#SFILATA" class="mt-auto border-2 border-[var(--black)] py-3 text-center font-black uppercase text-xs hover:bg-[var(--black)] hover:text-white transition-all text-[var(--black)]">PROGRAMMA</a>
                 </div>
             </div>
         </div>
@@ -80,533 +68,235 @@
     </div>
 </section>
 
-<!-- ═══ TIMELINE ════════════════════════════════════ -->
- <section class="w-full pb-20">
+<!-- ═══ EVENTI ══════════════════════════════════════════════════ -->
+<section class="w-full pb-24">
     <div class="max-w-6xl mx-auto px-8">
-        <h2 class="font-black text-5xl uppercase mb-16 tracking-tighter">Eventi</h2>
- 
-        <!-- Item 01 -->
-        <div>
-            <div class="flex items-baseline gap-6" id="DISORGANICHE">
-                <h3 class="text-3xl font-black uppercase tracking-tighter">22 Aprile — Cronache Disorganiche</h3>
-            </div>
-    
-            <div class="py-10 grid grid-cols-1 md:grid-cols-2 gap-8 text-sm uppercase font-bold tracking-widest">
-                <div class="space-y-4 pl-6" style="border-left:2px solid var(--blue);">
-                    <p><span class="opacity-40">14:00</span> — Apertura Showcase</p>
-                    <p><span class="opacity-40">16:00</span> — Workshop AI Design</p>
+
+        <!-- ── EVENTO 01 ─────────────────────────────────────────── -->
+        <div class="mb-2" id="DISORGANICHE">
+            <!-- Header evento -->
+            <div class="flex items-stretch" style="background:var(--purple);">
+                <div class="px-5 py-4 font-black text-sm uppercase tracking-widest flex items-center" style="background:var(--black); color:var(--white); writing-mode:horizontal-tb; white-space:nowrap;">
+                    22 APRILE
                 </div>
-                <div class="space-y-4 pl-6" style="border-left:2px solid var(--blue);">
-                    <p><span class="opacity-40">18:30</span> — Talk con Alberto Puliafito</p>
-                    <p><span class="opacity-40">20:30</span> — Live Concert Andy (Bluvertigo)</p>
+                <div class="px-6 py-4 flex flex-col justify-center">
+                    <h3 class="font-black text-2xl md:text-3xl uppercase tracking-tight leading-none">Cronache Disorganiche</h3>
+                    <p class="font-bold text-xs uppercase tracking-widest mt-1 opacity-70">Incroci Creativi</p>
+                </div>
+            </div>
+
+            <!-- Tag attività -->
+            <div class="px-6 py-5 text-xs font-bold uppercase tracking-widest leading-relaxed" style="background:#e8e8e4; border:1px solid #ccc;">
+                Talk, Contest, Sfide divertenti, Workshop, Presentazioni tesi,<br>
+                Food &amp; bar, Cocktail bar, Dj set, Interviste, Collaborazioni,<br>
+                Ted, Live concert
+            </div>
+        </div>
+
+        <!-- Mappa 01 -->
+        <div class="map-container pt-12  pb-24" data-map-index="0">
+            <div class="info-box-inner">
+                <h4 class="text-sm md:text-xl font-black uppercase info-name">&mdash;</h4>
+                <p class="text-xs font-mono info-desc"></p>
+            </div>
+            <div class="map-wrapper">
+                <img src="PIANTINA1.png" class="map-img" alt="Mappa 22 Aprile">
+                <div class="hotspot-layer"></div>
+            </div>
+        </div>
+
+        <!-- ── EVENTO 02 ─────────────────────────────────────────── -->
+        <div class="mb-2" id="EXPO">
+            <div class="flex items-stretch" style="background:var(--yellow);">
+                <div class="px-5 py-4 font-black text-sm uppercase tracking-widest flex items-center" style="background:var(--black); color:var(--white); white-space:nowrap;">
+                    21 MAGGIO
+                </div>
+                <div class="px-6 py-4 flex flex-col justify-center">
+                    <h3 class="font-black text-2xl md:text-3xl uppercase tracking-tight leading-none">Expo della Creativit&agrave;</h3>
+                    <p class="font-bold text-xs uppercase tracking-widest mt-1 opacity-70">Incroci Creativi</p>
                 </div>
             </div>
         </div>
- 
-        <!-- Item 02 -->
-        <div>
-            <div class="flex items-baseline gap-6" id="EXPO">
-                <h3 class="text-3xl font-black uppercase tracking-tighter">21 Maggio — Expo Creatività</h3>
-            </div>
-            
-            <div class="py-10 grid grid-cols-1 md:grid-cols-2 gap-8 text-sm uppercase font-bold tracking-widest">
-                <div class="space-y-4 pl-6" style="border-left:2px solid var(--orange);">
-                    <p><span class="opacity-40">10:00</span> — Inaugurazione Synapses</p>
-                    <p><span class="opacity-40">12:00</span> — Talk</p>
-                </div>
-                <div class="space-y-4 pl-6" style="border-left:2px solid var(--orange);">
-                    <p><span class="opacity-40">19:00</span> — DJ Set</p>
-                    <p><span class="opacity-40">21:00</span> — Chiusura </p>
+
+        <!-- Programma Expo: righe orario -->
+        <div class="mb-2" style="border:1px solid #ccc;">
+            <div class="prog-row flex gap-0 border-b" style="border-color:#ccc;">
+                <div class="px-5 py-4 font-black text-xs uppercase tracking-widest shrink-0 w-32" style="border-right:1px solid #ccc;">H. 11:30</div>
+                <div class="px-5 py-4">
+                    <p class="font-black text-xs uppercase tracking-wide">Collaborazione con Brescia Mobilit&agrave;</p>
+                    <p class="text-xs mt-1 opacity-60 leading-relaxed">Anteprima del progetto tra Triennio di Scenografia e Biennio Digital</p>
                 </div>
             </div>
-           
-        </div>
- 
-        <!-- Item 03 -->
-       
-           <div>
-                <div class="flex items-baseline gap-6" id="SFILATA">
-                    <h3 class="text-3xl font-black uppercase tracking-tighter">23 Giugno — Fashion Show</h3>
-                </div>
-               
-                <div class="py-10 grid grid-cols-1 md:grid-cols-2 gap-8 text-sm uppercase font-bold tracking-widest">
-                    <div class="space-y-4 pl-6" style="border-left:2px solid var(--yellow);">
-                        <p><span class="opacity-40">21:00</span> — Fashion Show</p>
-                    </div>
-                    <div class="space-y-4 pl-6" style="border-left:2px solid var(--yellow);">
-                        <p><span class="opacity-40">23:00</span> — After Party</p>
-                    </div>
-                </div>
-                <div class="map-container" id="map-scope">
-                    <div id="info-box">
-                        <h4 class="text-sm md:text-xl font-black uppercase">Room Name</h4>
-                        <p class="text-xs font-mono">Descrizione dell'evento e dettagli tecnici.</p>
-                    </div>
-
-                    <div class="map-wrapper" id="map-3d">
-                        <img src="PIANTINA3.png" class="map-img" id="current-map-img">
-                        <div id="hotspot-layer"></div>
-                    </div>
+            <div class="prog-row flex gap-0 border-b" style="border-color:#ccc;">
+                <div class="px-5 py-4 font-black text-xs uppercase tracking-widest shrink-0 w-32" style="border-right:1px solid #ccc;">H. 14:00</div>
+                <div class="px-5 py-4">
+                    <p class="font-black text-xs uppercase tracking-wide">Contest del Marmo con Marmi Ghirardi</p>
+                    <p class="text-xs mt-1 opacity-60 leading-relaxed">Premiazione del vincitore del contest promosso con il Triennio Decorazione</p>
                 </div>
             </div>
-
-</section>
-
-<section class=" bg-[var(--white)]">
-    <div class="max-w-6xl mx-auto px-8">
-        <h2 class="font-black text-5xl uppercase mb-16 tracking-tighter">WAYFINDING</h2>
-        <div class="flex gap-4 mb-10 border-b border-black pb-4">
-            <button onclick="updateMap(0)" class="map-btn font-black uppercase hover:text-[#F26522] transition-all">22 APRILE</button>
-            <button onclick="updateMap(1)" class="map-btn font-black uppercase opacity-30 hover:text-[#F26522] transition-all">21 MAGGIO</button>
-            <button onclick="updateMap(2)" class="map-btn font-black uppercase opacity-30 hover:text-[#F26522] transition-all">23 GIUGNO</button>
+            <div class="prog-row flex gap-0 border-b" style="border-color:#ccc;">
+                <div class="px-5 py-4 font-black text-xs uppercase tracking-widest shrink-0 w-32" style="border-right:1px solid #ccc;">H. TBD</div>
+                <div class="px-5 py-4">
+                    <p class="font-black text-xs uppercase tracking-wide">Workshop di Antotipia</p>
+                    <p class="text-xs mt-1 opacity-60 leading-relaxed">Laboratorio fotografico con pigmenti naturali e stampa alla luce solare</p>
+                </div>
+            </div>
+            <div class="prog-row flex gap-0">
+                <div class="px-5 py-4 font-black text-xs uppercase tracking-widest shrink-0 w-32" style="border-right:1px solid #ccc;">15:30 &ndash; 17:00</div>
+                <div class="px-5 py-4">
+                    <p class="font-black text-xs uppercase tracking-wide">LABA Visit</p>
+                    <p class="text-xs mt-1 opacity-60 leading-relaxed">Open day con orientamento, stand, Erasmus e Placement per studenti delle superiori</p>
+                </div>
+            </div>
         </div>
 
-        <div class="map-container" id="map-scope">
-            <div id="info-box">
-                <h4 class="text-sm md:text-xl font-black uppercase">Room Name</h4>
-                <p class="text-xs font-mono">Descrizione dell'evento e dettagli tecnici.</p>
+        <!-- Mappa 02 -->
+        <div class="map-container py-12" data-map-index="1">
+            <div class="info-box-inner">
+                <h4 class="text-sm md:text-xl font-black uppercase info-name">&mdash;</h4>
+                <p class="text-xs font-mono info-desc"></p>
             </div>
+            <div class="map-wrapper">
+                <img src="PIANTINA2.png" class="map-img" alt="Mappa 21 Maggio">
+                <div class="hotspot-layer"></div>
+            </div>
+        </div>
 
-            <div class="map-wrapper" id="map-3d">
-                <img src="PIANTINA1.png" class="map-img" id="current-map-img">
-                <div id="hotspot-layer"></div>
+        <!-- ── EVENTO 03 ─────────────────────────────────────────── -->
+        <div class="mb-2" id="SFILATA">
+            <div class="flex items-stretch" style="background:var(--orange);">
+                <div class="px-5 py-4 font-black text-sm uppercase tracking-widest flex items-center" style="background:var(--black); color:var(--white); white-space:nowrap;">
+                    23 GIUGNO
+                </div>
+                <div class="px-6 py-4 flex flex-col justify-center">
+                    <h3 class="font-black text-2xl md:text-3xl uppercase tracking-tight leading-none">The Fashion Show</h3>
+                    <p class="font-bold text-xs uppercase tracking-widest mt-1 opacity-80">PR&#274;SPON &mdash; 4 Volti della Donna</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Descrizione sfilata -->
+        <div class="px-6 py-5 mb-2 text-xs leading-relaxed" style="border:1px solid #ccc;">
+            <span class="font-black uppercase">Breve spiegazione della sfilata.</span> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis
+        </div>
+
+        <!-- Mappa 03 -->
+        <div class="map-container py-12" data-map-index="2">
+            <div class="info-box-inner">
+                <h4 class="text-sm md:text-xl font-black uppercase info-name">&mdash;</h4>
+                <p class="text-xs font-mono info-desc"></p>
+            </div>
+            <div class="map-wrapper">
+                <img src="PIANTINA3.png" class="map-img" alt="Mappa 23 Giugno">
+                <div class="hotspot-layer"></div>
             </div>
         </div>
     </div>
 </section>
 
-<!-- ═══ FOOTER ═══════════════════════════════════════════════════ -->
-<footer class="py-8 text-center uppercase text-[10px] text-md-[12px] font-black tracking-[0.3em]" style="background:var(--white);">
-    LABA BRESCIA © 2026
+<!-- ═══ FOOTER ══════════════════════════════════════════════════ -->
+<footer class="py-8 text-center uppercase text-[10px] font-black tracking-[0.3em]" style="background:var(--white);">
+    LABA BRESCIA &copy; 2026
 </footer>
- 
-<!-- ═══ SCRIPTS ══════════════════════════════════════════════════ -->
+
+<!-- ═══ SCRIPTS ═════════════════════════════════════════════════ -->
 <script>
-    /* ─── PALETTE */
     var deg = function(v) { return v * (Math.PI / 180); };
+
     var C = {
- 
-        green:    '#13AC51', 
-        blue:     '#3F5099', 
-        cyan:     '#AFD6E1', 
-        purple:   '#A79ADB', 
-        yellow:   '#FDC603', 
-        orange:   '#FF7230', 
-        white:    '#F2F2EF',
-        black:    '#111111', 
+        green:  '#13AC51',
+        blue:   '#3F5099',
+        cyan:   '#AFD6E1',
+        purple: '#A79ADB',
+        yellow: '#FDC603',
+        orange: '#FF7230',
+        white:  '#F2F2EF',
+        black:  '#111111'
     };
- 
+
     var blocksConfig = [
-       
-        { 
-            color: C.cyan, 
-            pos: [0, 0, -500], 
-            size: [800, 800], 
-            rot: [-90,0, -45],
-            content: '' 
+        { color: C.cyan,   pos: [0, 0, -500],     size: [800, 800], rot: [-90, 0, -45], content: '' },
+        { color: C.cyan,   pos: [-400, -600, 0],   size: [300, 800], rot: [0, -45, 90],  content: '' },
+        { color: C.cyan,   pos: [500, -800, 0],    size: [300, 600], rot: [0, -45, 90],  content: '' },
+        { color: C.purple, pos: [300, -600, 400],  size: [600, 400], rot: [0, 45, 0],    content: '' },
+        { color: C.green,  pos: [-200, -500, 200], size: [400, 400], rot: [0, 45, 0],    content: '' },
+        { color: C.green,  pos: [-400, 50, 200],   size: [600, 400], rot: [0, 45, 0],    content: '' },
+        { color: C.blue,   pos: [0, -350, 600],    size: [750, 600], rot: [-90, 0, -45], content: '' },
+        { color: C.blue,   pos: [0, 50, -200],     size: [700, 400], rot: [-90, 0, -45], content: '' },
+        {
+            color: C.yellow, pos: [-170, 500, 80], size: [400, 220], rot: [0, 45, 0],
+            content: '<div style="width:100%;height:100%;display:flex;align-items:center;justify-content:flex-end;"><img src="./SYN.png" alt="" style="height:auto;"></div>'
         },
-        { 
-            color: C.cyan, 
-            pos: [-400, -600, -0], 
-            size: [300, 800], 
-           rot: [0, -45, 90],
-            content: '' 
+        {
+            color: C.orange, pos: [150, 450, 100], size: [550, 220], rot: [0, -45, 0],
+            content: '<div style="width:100%;height:100%;display:flex;align-items:center;justify-content:flex-start;"><img src="./APSES.png" alt="" style="height:auto;"></div>'
         },
-         { 
-            color: C.cyan,
-            pos: [500, -800, 0], 
-            size: [300, 600], 
-           rot: [0, -45, 90],
-            content: '' 
+        {
+            color: C.cyan, pos: [-350, 0, 300], size: [600, 550], rot: [0, 45, 0],
+            url: '#SFILATA',
+            content: '<div style="display:flex;flex-direction:column;justify-content:center;text-align:left;"><h1 style="font-size:60px;font-weight:900;">PR\u014cSOPON</h1><p style="font-size:30px;font-weight:900;">FASHION SHOW</p><br><br><br><br><p style="font-size:30px;font-weight:900;">BRIXIA FORUM</p><p style="font-size:30px;font-weight:500;">VIA CAPRERA 5,<br>BRESCIA</p><br><br><p style="font-size:30px;font-weight:900;">H. 20:00</p><p style="font-size:30px;font-weight:500;">INGRESSO SU PRENOTAZIONE</p></div>'
         },
-        { 
-            color: C.purple, 
-            pos: [300, -600, 400], 
-            size: [600, 400], 
-            rot: [0, 45, 0],  
-            content: '' 
+        {
+            color: C.black, pos: [-525, 100, 500], size: [300, 30], rot: [0, 45, 0],
+            content: '<div style="width:100%;height:100%;display:flex;align-items:center;"><h1 style="font-size:35px;color:var(--white);">23 GIUGNO</h1></div>'
         },
-        
-        { 
-            color: C.green, 
-            pos: [-200, -500, 200], 
-            size: [400, 400], 
-            rot: [0, 45, 0],  
-            content: '' 
+        {
+            color: C.orange, pos: [50, 25, 200], size: [500, 500], rot: [0, -45, 0],
+            url: '#EXPO',
+            content: '<div style="display:flex;flex-direction:column;text-align:right;"><h1 style="font-size:60px;">EXPO DELLA<br>CREATIVIT\u00c0</h1><br><br><br><br><p style="font-size:30px;font-weight:900;">ACCADEMIA LABA</p><p style="font-size:30px;font-weight:500;">VIA DON G. VENDER, 66<br>BRESCIA</p><br><br><p style="font-size:30px;font-weight:900;">H. 14:00 - 18:00</p></div>'
         },
-        { 
-            color: C.green, 
-            pos: [-400, 50, 200], 
-            size: [600, 400], 
-            rot: [0, 45, 0],  
-            content: '' 
+        {
+            color: C.black, pos: [175, 100, 350], size: [270, 50], rot: [0, -45, 0],
+            content: '<div style="width:100%;height:100%;display:flex;align-items:center;"><h1 style="font-size:35px;color:var(--white);">21 MAGGIO</h1></div>'
         },
-        { 
-            color: C.blue, 
-            pos: [0, -350, 600], 
-            size: [750, 600],  
-            rot: [-90,0, -45],
-            content: '' 
-        },
-         { 
-            color: C.blue, 
-            pos: [0, 50, -200], 
-            size: [700, 400],  
-            rot: [-90,0, -45],
-            content: '' 
-        },
-
-
-        { 
-            color: C.yellow,   
-            pos: [-170, 500, 80], 
-            size: [400, 220], 
-            rot: [0, 45, 0], 
-            content: `
-            <div style="width:100%; height:100%; display:flex; align-items:center; justify-content:flex-end;">
-               <img src="./SYN.png" alt="Logo" style=" height:auto;">
-            </div>`
-        },
-
-        { 
-            color: C.orange,   
-            pos: [150, 450, 100], 
-            size: [550, 220], 
-            rot: [0, -45, 0], 
-            content: `
-            <div style=" padding:0px; width:100%; height:100%; display:flex; align-items:center; justify-content:flex-start;">
-                 <img src="./APSES.png" alt="Logo" style=" height:auto;">
-            </div>`
-        },
-
-      
-        { 
-            color: C.cyan, 
-            pos: [-350, 0, 300],   
-            size: [600, 550],  
-            rot: [0, 45, 0],  
-            url: 'https://synapses.laba.edu/cronache-disorganiche/',
-            content: `
-           <div style="display:flex; flex-direction:column; justify-content:center; text-align:left;">
-               <h1 style="font-size:60px; font-weight:900;">PRŌSOPON</h1>
-                <p style="font-size:30px; font-weight:900;">FASHION SHOW</p>
-               
-                 <br><br><br><br>
-                <p style="font-size:30px; font-weight:900;">BRIXIA FORUM</p>
-                <p style="font-size:30px; font-weight:500;">VIA CAPRERA 5,<br>BRESCIA</p><br><br>
-                <p style="font-size:30px; font-weight:900;">H. 20:00</p>
-                <p style="font-size:30px; font-weight:500;">INGRESSO</p>
-                <p style="font-size:30px; font-weight:500;">SU PRENOTAZIONE</p>
-            </div>
-            `
-        },
-        { 
-            color: C.black,   
-            pos: [-525, 100, 500],   
-            size: [300, 30], 
-            rot: [0, 45, 0], 
-            content: `
-            <div style="width:100%; height:100%; display:flex; align-items:center;">
-                <h1 style="font-size:35px; color:var(--white);">23 GIUGNO</h1>
-            </div>`
-        },
-    
-        { 
-            color: C.orange,   
-            pos: [50, 25,200],    
-            size: [500, 500],  
-            rot: [0, -45, 0],    
-            url: 'https://synapses.laba.edu/expo/',
-            content: `
-            <div style=" display:flex; flex-direction:column; text-align:right;">
-              <h1 style="font-size:60px; ">EXPO DELLA<br>CREATIVITÀ</h1>
-             <br><br><br><br>
-              <p style="font-size:30px; font-weight:900;">ACCADEMIA LABA</p>
-              <p style="font-size:30px; font-weight:500;">VIA DON G. VENDER, 66<br>BRESCIA</p><br><br>
-              <p style="font-size:30px; font-weight:900;">H. 14:00 - 18:00</p>
-            </div>`
-        },
-
-        
-        { 
-            color: C.black,   
-            pos: [175, 100, 350],    
-            size: [270, 50], 
-            rot: [0, -45, 0],  
-            content: `
-            <div style="width:100%; height:100%; padding:0px; display:flex; align-items:center;">
-                <h1 style="font-size:35px; color:var(--white);">21 MAGGIO</h1>
-            </div>`
-        },
-       
-          
-        { 
-            color: C.purple,   
-            pos: [0, -300, 500], 
-            size: [550, 400],  
-            rot: [-90,0, -45], 
+        {
+            color: C.purple, pos: [0, -300, 500], size: [550, 400], rot: [-90, 0, -45],
             url: '#DISORGANICHE',
-            content: `
-            
-            <div style="display:flex; flex-direction:column; text-align:left;">
-              <h1 style="font-size:60px;">CRONACHE<br>DISORGANICHE</h1>
-              <p style="font-size:30px;font-weight:500; ">INCROCI CREATIVI</p>
-              <br><br><br><br>
-              <p style="font-size:30px; font-weight:900;">ACCADEMIA LABA E MITA</p>
-            </div>
-            `
+            content: '<div style="display:flex;flex-direction:column;text-align:left;"><h1 style="font-size:60px;">CRONACHE<br>DISORGANICHE</h1><p style="font-size:30px;font-weight:500;">INCROCI CREATIVI</p><br><br><br><br><p style="font-size:30px;font-weight:900;">ACCADEMIA LABA E MITA</p></div>'
         },
-
-         { 
-            color: C.black,   
-            pos: [100, -285, 650],   
-            size: [250, 50], 
-            rot: [-90,0, -45],
-            content: `
-            <div style="width:100%; height:100%; padding:0px; display:flex; align-items:center;">
-                <h1 style="font-size:30px; color:var(--white);"> 22 MAGGIO</h1>
-            </div>`
-        },
+        {
+            color: C.black, pos: [100, -285, 650], size: [250, 50], rot: [-90, 0, -45],
+            content: '<div style="width:100%;height:100%;display:flex;align-items:center;"><h1 style="font-size:30px;color:var(--white);">22 APRILE</h1></div>'
+        }
     ];
-    
-    /*var blocksConfig = [
-       
-        
-         { 
-            color: C.cyan,
-            pos: [-300, 400, -25], 
-            size: [500, 400], 
-            rot: [0, 0, 0],   
-            content: '' 
-        },
-         { 
-            color: C.yellow, 
-            pos: [300, 100, -20], 
-            size: [500, 500],  
-            rot: [-90,0, 90],
-            content: '' 
-        },
-        { 
-            color: C.purple,
-            pos: [200, 50, -350], 
-            size: [800, 400], 
-            rot: [-90,0, -90], 
-            content: '' 
-        },
-        { 
-            color: C.blue, 
-            pos: [0, -500, 400], 
-            size: [600, 400], 
-            rot: [-90,0, -90], 
-            content: '' 
-        },
-        
-        { 
-            color: C.yellow, 
-            pos: [-400, -350, 200], 
-            size: [600, 300], 
-            rot: [0, 90, 0],  
-            content: '' 
-        },
-        { 
-            color: C.purple, 
-            pos: [-400, -200, -100], 
-            size: [300, 500], 
-            rot: [0, 0, 0], 
-            content: '' 
-        },
 
-            { 
-            color: C.cyan, 
-            pos: [300, -300, 400], 
-            size: [300, 500], 
-            rot: [0, 0, 0], 
-            content: '' 
-        },
-        { 
-            color: C.green, 
-            pos: [50, -250, 450], 
-            size: [300, 500],  
-            rot: [0,90, 0],
-            content: '' 
-        },
-
-         { 
-            color: C.green, 
-            pos: [50, 500, 200], 
-            size: [300, 500],  
-            rot: [0,90, 0],
-            content: '' 
-        },
-
-         { 
-            color: C.orange, 
-            pos: [50, -250, -200], 
-            size: [300, 500],  
-            rot: [0,90, 0],
-            content: '' 
-        },
-
-         { 
-            color: C.blue, 
-            pos: [100, 300, 700], 
-            size: [350, 400],  
-            rot: [0,-90, 0],
-            content: '' 
-        },
-
-        { 
-            color: C.yellow,   
-            pos: [-170, 50, 80], 
-            size: [400, 220], 
-            rot: [0, 0, 0], 
-            content: `
-            <div style="width:100%; height:100%; display:flex; align-items:center; justify-content:flex-end;">
-                <h1 style="font-size:140px; font-family:"DIN-BOLD"; line-height:1; margin:0; color:var(--black);">SYN</h1>
-            </div>`
-        },
-
-        { 
-            color: C.orange,   
-            pos: [0, 0, 350], 
-            size: [550, 220], 
-            rot: [0, -90, 0], 
-            content: `
-            <div style=" padding:0px; width:100%; height:100%; display:flex; align-items:center; justify-content:flex-start;">
-                <h1 style="font-size:140px; font-family:"DIN-BOLD"; line-height:1; margin:0; color:var(--black);">APSES</h1>
-            </div>`
-        },
-
-      
-        { 
-            color: C.purple, 
-            pos: [25, 300,550],  
-            size: [600, 350],  
-            rot: [0, -90, 0],   
-            url: 'https://synapses.laba.edu/cronache-disorganiche/',
-            content: `
-            <div style="display:flex; flex-direction:column; text-align:left;">
-              <h1 style="font-size:60px;">CRONACHE<br>DISORGANICHE</h1>
-              <p style="font-size:30px;font-weight:500; ">INCROCI CREATIVI</p>
-              <br><br><br><br>
-              <p style="font-size:30px; font-weight:900;">ACCADEMIA LABA E MITA</p>
-            </div>`
-        },
-        { 
-            color: C.black,   
-            pos: [0, 250,750],  
-            size: [300, 30], 
-            rot: [0, -90, 0],    
-            content: `
-            <div style="width:100%; height:100%; display:flex; align-items:center;">
-                <h1 style="font-size:35px; color:var(--white);">22 APRILE</h1>
-            </div>`
-        },
-    
-        { 
-            color: C.orange,   
-            pos: [-250, 450, 50],   
-            size: [500, 500],  
-            rot: [0, 0, 0],   
-            url: 'https://synapses.laba.edu/expo/',
-            content: `
-            <div style=" display:flex; flex-direction:column; text-align:right;">
-              <h1 style="font-size:60px; ">EXPO DELLA<br>CREATIVITÀ</h1>
-             <br><br><br><br>
-              <p style="font-size:30px; font-weight:900;">ACCADEMIA LABA</p>
-              <p style="font-size:30px; font-weight:500;">VIA DON G. VENDER, 66<br>BRESCIA</p><br><br>
-              <p style="font-size:30px; font-weight:900;">H. 14:00 - 18:00</p>
-            </div>`
-        },
-        { 
-            color: C.black,   
-             pos: [-400, 525, 75],   
-            size: [270, 50], 
-            rot: [0, 0, 0], 
-            content: `
-            <div style="width:100%; height:100%; padding:0px; display:flex; align-items:center;">
-                <h1 style="font-size:35px; color:var(--white);">21 MAGGIO</h1>
-            </div>`
-        },
-       
-          
-        { 
-            color: C.cyan,   
-            pos: [-350, -150, 350], 
-            size: [500, 580],  
-            rot: [-90,0, -90], 
-            url: 'https://synapses.laba.edu/fashion-show/',
-            content: `
-            <div style="display:flex; flex-direction:column; justify-content:center; text-align:left;">
-               <h1 style="font-size:60px; font-weight:900;">PRŌSOPON</h1>
-                <p style="font-size:30px; font-weight:900;">FASHION SHOW</p>
-               
-                 <br><br><br><br>
-                <p style="font-size:30px; font-weight:900;">BRIXIA FORUM</p>
-                <p style="font-size:30px; font-weight:500;">VIA CAPRERA 5,<br>BRESCIA</p><br><br>
-                <p style="font-size:30px; font-weight:900;">H. 20:00</p>
-                <p style="font-size:30px; font-weight:500;">INGRESSO</p>
-                <p style="font-size:30px; font-weight:500;">SU PRENOTAZIONE</p>
-            </div>`
-        },
-
-         { 
-            color: C.black,   
-            pos: [-250, -125,525],   
-            size: [250, 50], 
-            rot: [-90,0, -90],
-            content: `
-            <div style="width:100%; height:100%; padding:0px; display:flex; align-items:center;">
-                <h1 style="font-size:30px; color:var(--white);">23 GIUGNO</h1>
-            </div>`
-        },
-    ];*/
+    /* ─── THREE.JS INIT ─── */
     var scene, camera, renderer, pivot, group;
     var isFocused = false, isMouseDown = false, px, py;
-    var isMobile = window.innerWidth < 768;
- 
+
     function init() {
         scene  = new THREE.Scene();
         camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 1, 10000);
-        camera.position.z = isMobile ? 5100 : 2600;
-        //camera.position.y = 100;
-        
-        // Spostiamo la camera in alto (Y: 400) e la teniamo a distanza (Z: 1200)
-        camera.position.set(0, 1000, 2600); 
-
-        // OBBLIGATORIO: Dì alla camera di puntare verso il centro (0,0,0) 
-        // altrimenti guarderà dritto nel vuoto sopra le card
+        camera.position.set(0, 1000, 2600);
         camera.lookAt(new THREE.Vector3(0, 0, 0));
 
         renderer = new THREE.CSS3DRenderer();
         renderer.setSize(window.innerWidth, window.innerHeight);
         document.getElementById('canvas-container').appendChild(renderer.domElement);
-       
+
         pivot = new THREE.Group();
-        pivot.position.y = 150; 
-      
-        pivot.rotation.y = deg(40)
-        
+        pivot.position.y = 150;
+        pivot.rotation.y = deg(40);
 
         group = new THREE.Group();
         scene.add(pivot);
         pivot.add(group);
- 
+
         blocksConfig.forEach(function(data) {
             var el = document.createElement('div');
             el.className = 'card-3d';
-            el.style.width           = data.size[0] + 'px';
-            el.style.height          = data.size[1] + 'px';
+            el.style.width = data.size[0] + 'px';
+            el.style.height = data.size[1] + 'px';
             el.style.backgroundColor = data.color;
-            el.innerHTML             = data.content;
- 
+            el.innerHTML = data.content;
+
             var obj = new THREE.CSS3DObject(el);
             obj.position.set(data.pos[0], data.pos[1], data.pos[2]);
             obj.rotation.set(deg(data.rot[0]), deg(data.rot[1]), deg(data.rot[2]));
             el.onclick = function() { if (!isMouseDown) redirectWithAnim(data.url, data.color); };
             group.add(obj);
         });
- 
+
         window.addEventListener('pointerdown', function(e) {
             if (e.target.closest('#canvas-container')) { isMouseDown = true; px = e.clientX; py = e.clientY; }
         });
@@ -622,251 +312,173 @@
             camera.updateProjectionMatrix();
             renderer.setSize(window.innerWidth, window.innerHeight);
         });
- 
+
         animate();
     }
- 
-    /* ─── REDIRECT CON ANIMAZIONE ────────────────────────────────── */
+
+    /* ─── NAVIGAZIONE ─── */
     function redirectWithAnim(url, color) {
         if (!url) return;
+
+        /* Link interno → scroll smooth */
+        if (url.charAt(0) === '#') {
+            var target = document.getElementById(url.slice(1));
+            if (target) target.scrollIntoView({ behavior: 'smooth' });
+            return;
+        }
+
+        /* Link esterno → overlay animato */
         var overlay = document.getElementById('redirect-overlay');
         overlay.style.background = color;
- 
-      
-        gsap.set(overlay, { 
-            autoAlpha: 0, 
-            scale: 0,
-            borderRadius: '50%',
-            transformOrigin: 'center center'
-        });
+        gsap.set(overlay, { autoAlpha: 0, scale: 0, borderRadius: '50%', transformOrigin: 'center center' });
         gsap.to(overlay, {
-            autoAlpha: 1,
-            scale: 4,
-            duration: 0.5,
-            ease: 'power3.in',
+            autoAlpha: 1, scale: 4, duration: 0.5, ease: 'power3.in',
             onComplete: function() {
                 gsap.to(overlay, {
-                    borderRadius: '0%',
-                    scale: 1,
-                    duration: 0.25,
-                    ease: 'none',
-                    onComplete: function() {
-                        window.location.href = url;
-                    }
+                    borderRadius: '0%', scale: 1, duration: 0.25, ease: 'none',
+                    onComplete: function() { window.location.href = url; }
                 });
             }
         });
     }
- 
+
     function animate() {
         requestAnimationFrame(animate);
         if (!isMouseDown && !isFocused) pivot.rotation.y += 0.003;
         renderer.render(scene, camera);
     }
- 
-    /* ─── ACCORDION con GSAP ─────────────────────────────────────
-       
-    ─────────────────────────────────────────────────────────── */
-    var currentItem = null; 
- 
-    function toggleProg(btn) {
-        var item    = btn.closest('.prog-item');
-        var content  = item.querySelector('.prog-content');
-        var icon     = btn.querySelector('.plus-icon');
-        var isOpen   = item.classList.contains('active');
 
-        
-        if (currentItem && currentItem !== item) {
-            var prevContent = currentItem.querySelector('.prog-content');
-            var prevIcon    = currentItem.querySelector('.plus-icon');
-            currentItem.classList.remove('active');
-            
-            
-            gsap.to(prevContent, { height: 0, opacity: 0, duration: 0.3, ease: 'power4.inOut' });
-            gsap.to(prevIcon,    { rotation: 0, duration: 0.25, ease: 'power2.out' });
-        }
-
-        if (isOpen) {
-            /* Chiudi */
-            item.classList.remove('active');
-            gsap.to(content, { height: 0, opacity: 0, duration: 0.3, ease: 'power4.inOut' });
-            gsap.to(icon,    { rotation: 0, duration: 0.25, ease: 'power2.out' });
-            currentItem = null;
-        } else {
-            /* Apri */
-            item.classList.add('active');
-            // Usiamo 'expo.out' che parte velocissimo e si ferma subito
-            gsap.to(content, { 
-                height: 'auto', 
-                opacity: 1, 
-                duration: 0.4, // Da 0.55 a 0.4
-                ease: 'expo.out', 
-                overwrite: true 
-            });
-            gsap.to(icon, { rotation: 45, duration: 0.25, ease: 'back.out(2)' });
-            currentItem = item;
-        }
-    }
- 
-    init();
-
-    // ─── ANIMAZIONE DI HOVER SUI PIANI 3D ─────────────────────────────
-    const festivalTriggers = document.querySelectorAll('.trigger-area');
-    const isMobileDevice = window.innerWidth < 768;
-
-    // Configurazioni
-    const festivalConfigs = isMobileDevice ? [
-        { rotX: 10, rotY: -5,  rotZ: -2, z: 0 },
-        { rotX: -8, rotY: 8,   rotZ: 2,  z: 0 },
-        { rotX: 5,  rotY: -10, rotZ: 3,  z: 0 }
-    ] : [
-        { rotX: 15, rotY: -25, rotZ: -10, z: -100 },
-        { rotX: -10, rotY: 15, rotZ: -5,  z: 50 },
-        { rotX: 25, rotY: 10, rotZ: 5, z: -100 }
-    ];
-
-    festivalTriggers.forEach((trigger, i) => {
-    const plane = trigger.querySelector('.floating-plane');
-    const conf = festivalConfigs[i];
-
-    // Setup iniziale
-    gsap.set(plane, { 
-        rotationX: conf.rotX, 
-        rotationY: conf.rotY, 
-        rotationZ: conf.rotZ, 
-        z: conf.z 
-    });
-
-    // Animazione di floating
-    const bounce = gsap.to(plane, {
-        y: isMobileDevice ? 10 : 20,
-        rotationX: "+=3",
-        duration: 3 + i,
-        yoyo: true,
-        repeat: -1,
-        ease: "sine.inOut"
-    });
-
-    // Eventi Hover/Touch
-    const activate = () => {
-        bounce.pause();
-        trigger.style.zIndex = "100";
-        
-        let moveX = 0;
-        if(!isMobileDevice) {
-            if(i === 0) moveX = 30;
-            if(i === 2) moveX = -30;
-        }
-
-        gsap.to(plane, {
-            rotationX: 0, 
-            rotationY: 0, 
-            rotationZ: 0,
-            x: moveX,
-            z: isMobileDevice ? 50 : 200, 
-            scale: 1, // Lo teniamo a 1 per evitare sfocature
-            duration: 0.5,
-            ease: "expo.out"
-        });
-    };
-    const deactivate = () => {
-        trigger.style.zIndex = "5";
-        gsap.to(plane, {
-            rotationX: conf.rotX, rotationY: conf.rotY, rotationZ: conf.rotZ,
-            z: conf.z, scale: 1,
-            duration: 0.6,
-            ease: "power2.inOut",
-            onComplete: () => bounce.play()
-        });
-    };
-
-    trigger.addEventListener('mouseenter', activate);
-    trigger.addEventListener('mouseleave', deactivate);
-    
-    // Per mobile: un tocco raddrizza, un secondo tocco permette di cliccare il link
-    trigger.addEventListener('touchstart', activate, {passive: true});
-    });
-
-    // MAPPE
-    const mapData = [
+    /* ─── MAPPE ─── */
+    var mapData = [
         {
-            img: "PIANTINA1.png",
+            img: 'PIANTINA1.png',
             locations: [
                 { top: '50%', left: '40%', w: '10%', h: '20%', name: '1', desc: '.' },
                 { top: '50%', left: '68%', w: '10%', h: '20%', name: '2', desc: '.' },
                 { top: '36%', left: '75%', w: '10%', h: '20%', name: '3', desc: '.' },
                 { top: '25%', left: '87%', w: '10%', h: '20%', name: '4', desc: '.' },
-                { top: '5%', left: '50%', w: '20%', h: '20%', name: '5', desc: '.' },
+                { top: '5%',  left: '50%', w: '20%', h: '20%', name: '5', desc: '.' },
                 { top: '30%', left: '55%', w: '18%', h: '20%', name: '6', desc: '.' },
-                { top: '30%', left: '45%', w: '7%', h: '7%', name: '7', desc: '.' },
-                { top: '70%', left: '5%', w: '20%', h: '25%', name: '8', desc: '.' },
+                { top: '30%', left: '45%', w: '7%',  h: '7%',  name: '7', desc: '.' },
+                { top: '70%', left: '5%',  w: '20%', h: '25%', name: '8', desc: '.' }
             ]
         },
         {
-            img: "PIANTINA2.png", 
+            img: 'PIANTINA2.png',
             locations: [
-                { top: '40%', left: '20%', w: '20%', h: '30%', 
-                name: '1', 
-                desc: '.' }
+                { top: '40%', left: '20%', w: '20%', h: '30%', name: '1', desc: '.' }
             ]
         },
-
         {
-            img: "PIANTINA3.png", 
+            img: 'PIANTINA3.png',
             locations: [
                 { top: '40%', left: '20%', w: '30%', h: '40%', name: '1', desc: '.' }
             ]
         }
     ];
 
-    const infoBox = document.getElementById('info-box');
-    const mapWrapper = document.getElementById('map-3d');
+    function initMap(container) {
+        var index   = parseInt(container.getAttribute('data-map-index'), 10);
+        var data    = mapData[index];
+        var infoBox = container.querySelector('.info-box-inner');
+        var layer   = container.querySelector('.hotspot-layer');
 
-    function updateMap(index) {
-        const data = mapData[index];
-        document.getElementById('current-map-img').src = data.img;
-        
-        //opacità bottoni
-        document.querySelectorAll('.map-btn').forEach((b, i) => b.classList.toggle('opacity-30', i !== index));
-
-        const layer = document.getElementById('hotspot-layer');
-        layer.innerHTML = ''; 
-
-        data.locations.forEach(loc => {
-            const hs = document.createElement('div');
+        data.locations.forEach(function(loc) {
+            var hs = document.createElement('div');
             hs.className = 'hotspot';
-            hs.style.cssText = `top:${loc.top}; left:${loc.left}; width:${loc.w}; height:${loc.h};`;
-            
-            hs.addEventListener('mouseenter', (e) => {
-                infoBox.querySelector('h4').innerText = loc.name;
-                infoBox.querySelector('p').innerText = loc.desc;
+            hs.style.cssText = 'top:' + loc.top + ';left:' + loc.left + ';width:' + loc.w + ';height:' + loc.h + ';';
+
+            hs.addEventListener('mouseenter', function() {
+                infoBox.querySelector('.info-name').innerText = loc.name;
+                infoBox.querySelector('.info-desc').innerText = loc.desc;
                 gsap.to(infoBox, { opacity: 1, scale: 1, duration: 0.3 });
             });
-
-            hs.addEventListener('mouseleave', () => {
+            hs.addEventListener('mouseleave', function() {
                 gsap.to(infoBox, { opacity: 0, scale: 0.9, duration: 0.2 });
             });
 
             layer.appendChild(hs);
         });
+
+        container.addEventListener('mousemove', function(e) {
+            var rect = container.getBoundingClientRect();
+            gsap.to(infoBox, {
+                left: e.clientX - rect.left + 20,
+                top:  e.clientY - rect.top  - 20,
+                duration: 0.4,
+                ease: 'power2.out'
+            });
+        });
     }
 
-    // Inseguimento Mouse
-    document.getElementById('map-scope').addEventListener('mousemove', (e) => {
-        const rect = e.currentTarget.getBoundingClientRect();
-        const x = e.clientX - rect.left + 20;
-        const y = e.clientY - rect.top - 20;
+    /* ─── ANIMAZIONE CARD FESTIVAL (inclinazione + floating + hover) ─── */
+    var festivalTriggers = document.querySelectorAll('.trigger-area');
+    var isMobileDevice   = window.innerWidth < 768;
 
-        gsap.to(infoBox, {
-            left: x,
-            top: y,
-            duration: 0.4,
-            ease: "power2.out"
+    var festivalConfigs = isMobileDevice ? [
+        { rotX: 10, rotY: -5,  rotZ: -2, z: 0 },
+        { rotX: -8, rotY: 8,   rotZ: 2,  z: 0 },
+        { rotX: 5,  rotY: -10, rotZ: 3,  z: 0 }
+    ] : [
+        { rotX: 15, rotY: -25, rotZ: -10, z: -100 },
+        { rotX: -10, rotY: 15, rotZ: -5,  z: 50  },
+        { rotX: 25, rotY: 10,  rotZ: 5,   z: -100 }
+    ];
+
+    festivalTriggers.forEach(function(trigger, i) {
+        var plane = trigger.querySelector('.floating-plane');
+        var conf  = festivalConfigs[i];
+
+        /* inclinazione iniziale */
+        gsap.set(plane, { rotationX: conf.rotX, rotationY: conf.rotY, rotationZ: conf.rotZ, z: conf.z });
+
+        /* floating loop */
+        var bounce = gsap.to(plane, {
+            y: isMobileDevice ? 10 : 20,
+            rotationX: '+=' + 3,
+            duration: 3 + i,
+            yoyo: true,
+            repeat: -1,
+            ease: 'sine.inOut'
         });
+
+        function activate() {
+            bounce.pause();
+            trigger.style.zIndex = '100';
+            var moveX = 0;
+            if (!isMobileDevice) {
+                if (i === 0) moveX = 30;
+                if (i === 2) moveX = -30;
+            }
+            gsap.to(plane, {
+                rotationX: 0, rotationY: 0, rotationZ: 0,
+                x: moveX,
+                z: isMobileDevice ? 50 : 200,
+                scale: 1,
+                duration: 0.5,
+                ease: 'expo.out'
+            });
+        }
+
+        function deactivate() {
+            trigger.style.zIndex = '5';
+            gsap.to(plane, {
+                rotationX: conf.rotX, rotationY: conf.rotY, rotationZ: conf.rotZ,
+                x: 0, z: conf.z, scale: 1,
+                duration: 0.6,
+                ease: 'power2.inOut',
+                onComplete: function() { bounce.play(); }
+            });
+        }
+
+        trigger.addEventListener('mouseenter', activate);
+        trigger.addEventListener('mouseleave', deactivate);
+        trigger.addEventListener('touchstart', activate, { passive: true });
     });
 
-    updateMap(0);
-    
+    /* ─── AVVIO ─── */
+    init();
+    document.querySelectorAll('.map-container').forEach(function(c) { initMap(c); });
 </script>
 </body>
 </html>
