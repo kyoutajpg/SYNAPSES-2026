@@ -12,7 +12,13 @@
         @font-face {
             font-family: 'Adapter Mono PE';
             src: url('../Fonts/AdapterMonoPE-Variable.woff2') format('woff2');
-            font-weight: 100 900;
+            font-weight: 100 700;
+        }
+
+        @font-face {
+            font-family: 'DIN-BOLD';
+            src: url('../Fonts/DIN-BOLD.ttf') format('ttf');
+            font-weight: 100 700;
         }
  
         body {
@@ -37,12 +43,12 @@
         .card-3d {
             backface-visibility: visible;
             transform-style: preserve-3d;
-            padding: 50px;
+            padding: 30px;
             cursor: pointer;
             user-select: none;
             display: flex;
             flex-direction: column;
-            justify-content: center;
+            justify-content: top;
             pointer-events: auto;
         }
  
