@@ -6,7 +6,7 @@
     --yellow: #FDC603;
     --orange: #FF7230;
     --white:  #f9f9f9;
-    --black:  #111111;
+    --black:  #2b2b2b;
 }
 
 @font-face {
@@ -136,6 +136,7 @@ body {
     max-width: 900px;
     margin: 0 auto;
     perspective: 1000px;
+    padding-top: 40px;
 }
 
 .map-wrapper {
@@ -173,3 +174,55 @@ body {
         padding: 15px;
     }
 }
+
+  .wf-slideshow-viewport {
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+        touch-action: pan-y;
+    }
+    .wf-track {
+        display: flex;
+        align-items: flex-start;
+        will-change: transform;
+    }
+    .wf-slide {
+        flex-shrink: 0;
+        width: 80vw;
+        max-width: 650px;
+        padding: 0 0px;
+        cursor: pointer;
+        /* opacity/scale gestiti via GSAP */
+    }
+    .wf-slide .map-container {
+        padding: 64px 0 0px;
+        margin: 0;
+    }
+    /* la barra data colorata sopra ogni mappa */
+    .wf-date-bar {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 16px;
+        margin-bottom: 0;
+        text-align: center;
+    }
+    .wf-date-bar span {
+        font-size: 12px;
+        font-weight: 900;
+        text-transform: uppercase;
+        color: var(--black);
+   
+    }     
+    @media (min-width: 768px) {
+       
+      .wf-slide {
+        flex-shrink: 0;
+        width: 90vw;
+        max-width: 950px;
+        padding: 0 0px;
+        cursor: pointer;
+        /* opacity/scale gestiti via GSAP */
+    }
+
+    }
