@@ -573,41 +573,72 @@
             { color: C.cyan,   pos: [0, 0, -500],     size: [800, 800], rot: [-90, 0, -45], content: '' },
             { color: C.cyan,   pos: [-400, -600, 0],   size: [300, 800], rot: [0, -45, 90],  content: '' },
             { color: C.cyan,   pos: [500, -800, 0],    size: [300, 600], rot: [0, -45, 90],  content: '' },
-            { color: C.purple, pos: [300, -600, 400],  size: [600, 400], rot: [0, 45, 0],    content: '' },
-            { color: C.green,  pos: [-200, -500, 200], size: [400, 400], rot: [0, 45, 0],    content: '' },
+            { color: C.yellow, pos: [300, -600, 400],  size: [600, 400], rot: [0, 45, 0],    content: '' },
+            { color: C.orange,  pos: [-200, -500, 200], size: [400, 400], rot: [0, 45, 0],    content: '' },
             { color: C.green,  pos: [-400, 50, 200],   size: [600, 400], rot: [0, 45, 0],    content: '' },
             { color: C.blue,   pos: [0, -350, 600],    size: [750, 600], rot: [-90, 0, -45], content: '' },
             { color: C.blue,   pos: [0, 50, -200],     size: [700, 400], rot: [-90, 0, -45], content: '' },
+            { color: C.purple, pos: [100, 25, 200], size: [500, 500], rot: [0, -45, 0], content: ''},
             {
                 color: C.yellow, pos: [-170, 500, 80], size: [400, 220], rot: [0, 45, 0],
-                content: '<div style="width:100%;height:100%;display:flex;align-items:center;justify-content:flex-end;"><img src="./SYN.png" alt="" style="height:100%;width:auto;"></div>'
+                content: `
+                <div style="width:100%;height:100%;display:flex;align-items:center;justify-content:flex-end;">
+                    <img src="./SYN.png" alt="" style="height:100%;width:auto;">
+                </div>`
             },
             {
                 color: C.orange, pos: [150, 450, 100], size: [550, 220], rot: [0, -45, 0],
-                content: '<div style="width:100%;height:100%;display:flex;align-items:center;justify-content:flex-start;"><img src="./APSES.png" alt="" style="height:auto;"></div>'
+                content: `
+                <div style="width:100%;height:100%;display:flex;align-items:center;justify-content:flex-start;">
+                    <img src="./APSES.png" alt="" style="height:auto;">
+                </div>`
             },
             {
                 color: C.cyan, pos: [-350, 0, 300], size: [600, 550], rot: [0, 45, 0],
                 url: '#SFILATA',
-                content: '<div style="display:flex;flex-direction:column;justify-content:center;text-align:left;"><h1 style="font-size:60px;font-weight:900;">PRŌSOPON</h1><p style="font-size:30px;font-weight:900;">FASHION SHOW</p><br><br><br><br><p style="font-size:30px;font-weight:900;">BRIXIA FORUM</p><p style="font-size:30px;font-weight:500;">VIA CAPRERA 5,<br>BRESCIA</p><br><br><p style="font-size:30px;font-weight:900;">H. 20:00</p><p style="font-size:30px;font-weight:500;">INGRESSO SU PRENOTAZIONE</p></div>'
+                content: `<div style="display:flex;flex-direction:column;justify-content:center;text-align:left;">
+                    <h1 style="font-size:60px;font-weight:900;">PRŌSOPON</h1>
+                    <p style="font-size:30px;font-weight:900;">FASHION SHOW</p>
+                    <br><br><br><br>
+                    <p style="font-size:30px;font-weight:900;">BRIXIA FORUM</p>
+                    <p style="font-size:30px;font-weight:500;">VIA CAPRERA 5,<br>BRESCIA</p>
+                    <br><br>
+                    <p style="font-size:30px;font-weight:900;">H. 20:00</p>
+                    <p style="font-size:30px;font-weight:500;">INGRESSO SU PRENOTAZIONE</p>
+                    </div>`
             },
             {
                 color: C.black, pos: [-525, 100, 500], size: [300, 30], rot: [0, 45, 0],
-                content: '<div style="width:100%;height:100%;display:flex;align-items:center;"><h1 style="font-size:35px;color:var(--white);">23 GIUGNO</h1></div>'
+                content: `<div style="width:100%;height:100%;display:flex;align-items:center;">
+                    <h1 style="font-size:35px;color:var(--white);">23 GIUGNO</h1>
+                </div>`
             },
             {
                 color: C.yellow, pos: [50, 25, 200], size: [500, 500], rot: [0, -45, 0],
                 url: '#EXPO',
-                content: '<div style="display:flex;flex-direction:column;text-align:right;"><h1 style="font-size:60px;">EXPO DELLA<br>CREATIVIT\u00c0</h1><br><br><br><br><p style="font-size:30px;font-weight:900;">ACCADEMIA LABA</p><p style="font-size:30px;font-weight:500;">VIA DON G. VENDER, 66<br>BRESCIA</p><br><br><p style="font-size:30px;font-weight:900;">H. 14:00 - 18:00</p></div>'
+                content: `
+                <div style="display:flex;flex-direction:column;text-align:right;">
+                    <h1 style="font-size:60px;">EXPO DELLA<br>CREATIVIT\u00c0</h1>
+                    <br><br><br><br><p style="font-size:30px;font-weight:900;">ACCADEMIA LABA</p>
+                    <p style="font-size:30px;font-weight:500;">VIA DON G. VENDER, 66<br>BRESCIA</p>
+                    <br><br>
+                    <p style="font-size:30px;font-weight:900;">H. 14:00 - 18:00</p>
+                </div>`
             },
             {
                 color: C.black, pos: [175, 100, 350], size: [270, 50], rot: [0, -45, 0],
-                content: '<div style="width:100%;height:100%;display:flex;align-items:center;"><h1 style="font-size:35px;color:var(--white);">21 MAGGIO</h1></div>'
+                content: `
+                    <div style="width:100%;height:100%;display:flex;align-items:center;">
+                    <h1 style="font-size:35px;color:var(--white);">21 MAGGIO</h1>
+                    </div>`
             },
             {
                 color: C.purple, pos: [0, -300, 500], size: [550, 400], rot: [-90, 0, -45],
                 url: '#DISORGANICHE',
-                content: '<div style="display:flex;flex-direction:column;text-align:left;"><h1 style="font-size:60px;">CRONACHE<br>DISORGANICHE</h1><p style="font-size:30px;font-weight:500;">INCROCI CREATIVI</p><br><br><br><br><p style="font-size:30px;font-weight:900;">ACCADEMIA LABA E MITA</p></div>'
+                content: `<div style="display:flex;flex-direction:column;text-align:left;">
+                    <h1 style="font-size:60px;">CRONACHE<br>DISORGANICHE</h1>
+                    <p style="font-size:30px;font-weight:500;">INCROCI CREATIVI</p><br><br><br><br>
+                    <p style="font-size:30px;font-weight:900;">ACCADEMIA LABA E MITA</p></div>`,
             },
             {
                 color: C.black, pos: [100, -285, 650], size: [250, 50], rot: [-90, 0, -45],
