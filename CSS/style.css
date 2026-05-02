@@ -130,24 +130,41 @@ body {
 }
 
 /* ─── MAPPA ─── */
+/* Contenitore principale: il rettangolo bianco ampio */
 .map-container {
     position: relative;
     width: 100%;
-    max-width: 900px;
-    margin: 0 auto;
-    perspective: 1000px;
-    padding-top: 40px;
+    background-color: #ffffff;
+    /* Padding generoso per creare l'effetto "ampio bianco" */
+    padding: 60px 20px; 
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Evita che la pagina si muova se l'immagine è grande */
 }
 
-.map-wrapper {
-    position: relative;
-}
-
+/* La mappa vera e propria */
 .map-img {
-    width: 100%;
+    /* Modifica questa percentuale per decidere quanto deve essere grande la mappa nel bianco */
+    width: 90%; 
+    max-width: 800px; /* Limite per non sgranare su desktop */
     height: auto;
     display: block;
+    position: relative;
+    z-index: 10;
 }
+
+/* Livello per gli hotspot: deve sovrapporsi esattamente all'immagine */
+.hotspot-layer {
+    position: absolute;
+    /* Questi valori devono matchare la posizione dell'immagine centrata */
+    width: 90%; 
+    max-width: 800px;
+    height: 100%;
+    z-index: 20;
+}
+
 
 .hotspot {
     position: absolute;
