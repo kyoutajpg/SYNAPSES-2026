@@ -424,7 +424,7 @@
         </div>
 
     <h4 class="font-black text-sm uppercase tracking-widest mb-4 mt-10 text-[var(--yellow)]">Mappa 21 Maggio</h4>
-    <div class="map-container" data-map-index="0">
+    <div class="map-container" data-map-index="1">
         <!-- Box informazioni che segue il mouse -->
         <div class="info-box-inner">
             <h4 class="text-sm md:text-xl font-black uppercase info-name"></h4>
@@ -536,7 +536,7 @@
         </section>
 
         <h4 class="font-black text-sm uppercase tracking-widest mb-4 mt-10 text-[var(--cyan)]">Mappa 23 Giugno</h4>
-        <div class="map-container" data-map-index="0">
+        <div class="map-container" data-map-index="2">
             <!-- Box informazioni che segue il mouse -->
             <div class="info-box-inner">
                 <h4 class="text-sm md:text-xl font-black uppercase info-name">  </h4>
@@ -708,30 +708,110 @@
         }
 
         /* ─── MAPPE ─── */
+        
         var mapData = [
             {
+                // ══ MAPPA 1: 22 APRILE — Cronache Disorganiche ══
+                // Img 1536×800 (nativa 1500×788) — forme isometriche su fondo nero
                 img: 'PIANTINA1.png',
                 locations: [
-                    { top: '50%', left: '40%', w: '10%', h: '20%', name: '1', desc: '.' },
-                    { top: '50%', left: '68%', w: '10%', h: '20%', name: '2', desc: '.' },
-                    { top: '36%', left: '75%', w: '10%', h: '20%', name: '3', desc: '.' },
-                    { top: '25%', left: '87%', w: '10%', h: '20%', name: '4', desc: '.' },
-                    { top: '5%',  left: '50%', w: '20%', h: '20%', name: '5', desc: '.' },
-                    { top: '30%', left: '55%', w: '18%', h: '20%', name: '6', desc: '.' },
-                    { top: '30%', left: '45%', w: '7%',  h: '7%',  name: '7', desc: '.' },
-                    { top: '70%', left: '5%',  w: '20%', h: '25%', name: '8', desc: '.' }
+                    // Viola — blocco in alto centro-sinistra (Atrio)
+                    { top: '15%',  left: '50%', w: '18%', h: '15%',
+                    name: 'Velvet Sky / Giardino',
+                    desc: 'Food & Bar · 16:00–19:00' },
+
+                    // Arancione — piccolo blocco subito sotto il viola
+                    { top: '30%', left: '45%', w: '6%',  h: '10%',
+                    name: 'Future Orange',
+                    desc: ' Interviste agli ospiti · 15:00–19:00' },
+
+                    // Ciano grande — blocco centrale dominante
+                    { top: '32%', left: '50%', w: '17%', h: '20%',
+                    name: 'Think Violet / Atrio',
+                    desc: 'Talk, Masterchef Grafica· 15:00–18:00' },
+
+                    // Giallo — blocco basso centro-sinistra
+                    { top: '50%', left: '40%', w: '15%', h: '15%',
+                    name: 'Giardino',
+                    desc: 'Food & Bar · 16:00–19:00  Cocktail bar · 19:00–20:00' },
+
+                    // Verde — blocco centro-destra
+                    { top: '50%', left: '65%', w: '10%', h: '12%',
+                    name: 'Make Grey B03',
+                    desc: 'Workshop & Masterclass · 15:00–17:00' },
+
+                    // Giallo orizzontale — striscia destra
+                    { top: '40%', left: '75%', w: '12%', h: '12%',
+                    name: 'Creative Space B04',
+                    desc: 'Presentazione Tesi · 15:00–17:15' },
+
+                    // Blu verticale — colonna destra
+                    { top: '30%', left: '85%', w: '15%',  h: '15%',
+                    name: 'White Share B05',
+                    desc: 'Collaborazioni con Aziende · 15:00–18:00' },
+
+                    // Blu grande isolato in basso-sinistra
+                    { top: '60%', left: '2%',  w: '22%', h: '28%',
+                    name: 'MITA — Sala Concerti',
+                    desc: 'TED · 17:00–18:30    Live Concert Andy dei Bluvertigo & Closing party · 20:00-21:00' }
                 ]
             },
             {
+                // ══ MAPPA 2: 21 MAGGIO — Expo della Creatività ══
+                // Stessa sede LABA, layout edifici diverso
                 img: 'PIANTINA2.png',
                 locations: [
-                    { top: '40%', left: '20%', w: '20%', h: '30%', name: '1', desc: '.' }
+                    // Viola — blocco alto sinistra
+                    { top: '15%',  left: '30%', w: '20%', h: '20%',
+                    name: 'Aula A39 — Pittura',
+                    desc: 'Wounderkammer + Workshop AI, Incisione, Cianotipia · tutto il giorno' },
+
+                    // Arancione — piccolo a sinistra
+                    { top: '30%', left: '20%', w: '12%',  h: '18%',
+                    name: 'Aula A58 — Decorazione',
+                    desc: 'Workshop Serigrafia "Bestiari" + Materia in Transito & Urban Design' },
+
+                    // Ciano grande — blocco centrale
+                    { top: '35%', left: '30%', w: '25%', h: '25%',
+                    name: 'Aule A46 / A47 — Graphic & Multimedia',
+                    desc: 'Incroci Creativi, Digital Design, App Gamification, Workshop Cinema' },
+
+                    // Verde grande — alto destra
+                    { top: '12%',  left: '55%', w: '30%', h: '28%',
+                    name: 'Aula Magna — Palco Centrale',
+                    desc: 'Biennio Cinema, Tram Tram Quotidiano, Awards & Contest · 10:00–14:00+' },
+
+                    // Verde piccolo — basso centro
+                    { top: '55%', left: '50%', w: '16%', h: '22%',
+                    name: 'Aule A40 / A52 — Design',
+                    desc: 'Interior & Industrial Exhibition, Orologi 3D, Pensiline Tram, Sergi Cereda Award' },
+
+                    // Giallo — centro destra
+                    { top: '46%', left: '68%', w: '15%', h: '15%',
+                    name: 'Aula A53 — Fashion Design',
+                    desc: 'LABAtelier + Workshop "Made to Measure LABA!" · 14:00–17:00' },
+
+                    // Blu — basso destra
+                    { top: '35%', left: '80%', w: '15%', h: '18%',
+                    name: 'Aula A62 / Mensa — Fotografia',
+                    desc: 'Geografie Instabili (Botto) + Workshop Antotipia (Benaglia / Gatto)' },
+
                 ]
             },
             {
+                // ══ MAPPA 3: 23 GIUGNO — PRŌSOPON Fashion Show ══
+                // Solo 2 blocchi: arancione piccolo + ciano grande
                 img: 'PIANTINA3.png',
                 locations: [
-                    { top: '40%', left: '20%', w: '30%', h: '40%', name: '1', desc: '.' }
+                    // Arancione — piccolo blocco a sinistra
+                    { top: '34%', left: '18%', w: '12%',  h: '18%',
+                    name: 'Ingresso — Red Carpet',
+                    desc: 'Accoglienza e Red Carpet · H. 20:00' },
+
+                    // Ciano grande — blocco principale centrale
+                    { top: '30%', left: '30%', w: '30%', h: '30%',
+                    name: 'Brixia Forum — Main Hall',
+                    desc: 'PRŌSOPON Fashion Show · Sfilata Triennio & Biennio Fashion Design · H. 21:00' }
                 ]
             }
         ];
