@@ -265,3 +265,7 @@ body {
         min-height: 350px;
     }
 }
+
+  @media screen and (min-width: 600px)  {
+        .mobile-break { display: none; }
+    }
