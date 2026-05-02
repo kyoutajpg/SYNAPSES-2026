@@ -170,19 +170,21 @@ body {
     position: absolute;
     cursor: pointer;
     z-index: 20;
+    /*BORDER: 2px solid var(--black);*/
 }
 
 /* info-box inline: uno per ogni mappa, gestito da JS */
 .info-box-inner {
     position: absolute;
-    width: 150px;
-    padding: 10px;
-    background: var(--white);
-    border-left: 6px solid var(--black);
-    box-shadow: 20px 20px 40px rgba(0, 0, 0, 0.2);
+    background: rgba(255, 255, 255, 0.95);
+    border: 2px solid var(--black);
+    padding: 10px 15px;
+    z-index: 100;
     pointer-events: none;
     opacity: 0;
-    z-index: 100;
+    min-width: 180px;
+    max-width: 250px; /* Evita che diventi troppo largo */
+    box-shadow: 10px 10px 0px rgba(0,0,0,0.1);
 }
 
 @media (min-width: 768px) {
@@ -243,3 +245,23 @@ body {
     }
 
     }
+
+
+/* FIX MOBILE: Posizione fissa per evitare che il box esca dallo schermo */
+@media (max-width: 768px) {
+    .info-box-inner {
+        position: absolute;
+        bottom: 10px;
+        left: 50% !important;
+        transform: translateX(-50%) scale(0.9) !important;
+        top: auto !important; /* Disabilita il tracking verticale su mobile */
+        width: 90%;
+        max-width: none;
+        text-align: center;
+    }
+    
+    .map-container {
+        padding: 40px 10px; /* Meno padding su mobile per dare spazio alla mappa */
+        min-height: 350px;
+    }
+}
